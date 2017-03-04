@@ -13,6 +13,8 @@
 		FBE1D8EB1E6A3CA60032C65A /* StuffedAnimalCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBE1D8E91E6A3CA60032C65A /* StuffedAnimalCollector.xcdatamodeld */; };
 		FBE1D8ED1E6A3CA60032C65A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE1D8EC1E6A3CA60032C65A /* Assets.xcassets */; };
 		FBE1D8F01E6A3CA60032C65A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE1D8EE1E6A3CA60032C65A /* LaunchScreen.storyboard */; };
+		FBE1D8F81E6A88900032C65A /* 2017-03-01_Zillow home value.png in Resources */ = {isa = PBXBuildFile; fileRef = FBE1D8F71E6A88900032C65A /* 2017-03-01_Zillow home value.png */; };
+		FBE1D8FA1E6A8DE60032C65A /* StuffedAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1D8F91E6A8DE60032C65A /* StuffedAnimalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FBE1D8EC1E6A3CA60032C65A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBE1D8EF1E6A3CA60032C65A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBE1D8F11E6A3CA60032C65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE1D8F71E6A88900032C65A /* 2017-03-01_Zillow home value.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-03-01_Zillow home value.png"; sourceTree = "<group>"; };
+		FBE1D8F91E6A8DE60032C65A /* StuffedAnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StuffedAnimalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		FBE1D8E11E6A3CA60032C65A /* StuffedAnimalCollector */ = {
 			isa = PBXGroup;
 			children = (
+				FBE1D8F71E6A88900032C65A /* 2017-03-01_Zillow home value.png */,
 				FBE1D8E21E6A3CA60032C65A /* AppDelegate.swift */,
 				FBE1D8E41E6A3CA60032C65A /* ViewController.swift */,
 				FBE1D8E61E6A3CA60032C65A /* Main.storyboard */,
+				FBE1D8F91E6A8DE60032C65A /* StuffedAnimalViewController.swift */,
 				FBE1D8EC1E6A3CA60032C65A /* Assets.xcassets */,
 				FBE1D8EE1E6A3CA60032C65A /* LaunchScreen.storyboard */,
 				FBE1D8F11E6A3CA60032C65A /* Info.plist */,
@@ -128,6 +134,7 @@
 			files = (
 				FBE1D8F01E6A3CA60032C65A /* LaunchScreen.storyboard in Resources */,
 				FBE1D8ED1E6A3CA60032C65A /* Assets.xcassets in Resources */,
+				FBE1D8F81E6A88900032C65A /* 2017-03-01_Zillow home value.png in Resources */,
 				FBE1D8E81E6A3CA60032C65A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 			files = (
 				FBE1D8E51E6A3CA60032C65A /* ViewController.swift in Sources */,
 				FBE1D8EB1E6A3CA60032C65A /* StuffedAnimalCollector.xcdatamodeld in Sources */,
+				FBE1D8FA1E6A8DE60032C65A /* StuffedAnimalViewController.swift in Sources */,
 				FBE1D8E31E6A3CA60032C65A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
