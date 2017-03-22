@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" id="zYi-Kq-6ff">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gPM-bV-BDQ">
                             <connections>
-                                <segue destination="GUX-RB-lGe" kind="show" id="gzB-DJ-drV"/>
+                                <segue destination="GUX-RB-lGe" kind="show" identifier="animalSegue" id="gzB-DJ-drV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,12 +83,21 @@
                                     <action selector="addTapped:" destination="GUX-RB-lGe" eventType="touchUpInside" id="3SH-Dl-Hgl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-7T-BkY">
+                                <rect key="frame" x="165" y="344" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="GUX-RB-lGe" eventType="touchUpInside" id="OxH-fq-AfO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ng7-qJ-fxu" firstAttribute="centerX" secondItem="fng-Eo-Rgf" secondAttribute="centerX" id="AlF-e2-7ae"/>
                             <constraint firstItem="Rk4-cE-olw" firstAttribute="centerX" secondItem="fng-Eo-Rgf" secondAttribute="centerX" id="Gtb-Ye-1cz"/>
                             <constraint firstItem="Rk4-cE-olw" firstAttribute="top" secondItem="yIg-S2-sSI" secondAttribute="bottom" constant="20" id="Jy4-PZ-4WA"/>
+                            <constraint firstItem="sEg-7T-BkY" firstAttribute="top" secondItem="ng7-qJ-fxu" secondAttribute="bottom" constant="10" id="TZl-Fc-lSH"/>
+                            <constraint firstItem="sEg-7T-BkY" firstAttribute="centerX" secondItem="fng-Eo-Rgf" secondAttribute="centerX" id="ULN-3g-3t9"/>
                             <constraint firstItem="ng7-qJ-fxu" firstAttribute="top" secondItem="Rk4-cE-olw" secondAttribute="bottom" constant="20" id="YeQ-oh-0oZ"/>
                             <constraint firstItem="yIg-S2-sSI" firstAttribute="top" secondItem="vfB-x9-UXl" secondAttribute="bottom" constant="20" id="na8-jT-SnL"/>
                             <constraint firstItem="Rk4-cE-olw" firstAttribute="width" secondItem="yIg-S2-sSI" secondAttribute="width" id="uPF-ci-R2Q"/>
@@ -110,7 +119,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="ng7-qJ-fxu" id="JbM-cg-I9T"/>
                         <outlet property="animalImageView" destination="yIg-S2-sSI" id="aK3-vx-nbq"/>
+                        <outlet property="deleteButton" destination="sEg-7T-BkY" id="My6-70-Ps2"/>
                         <outlet property="stuffedAnimalTextField" destination="Rk4-cE-olw" id="gxr-TW-hg1"/>
                     </connections>
                 </viewController>

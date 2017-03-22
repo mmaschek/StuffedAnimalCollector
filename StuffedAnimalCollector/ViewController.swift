@@ -46,6 +46,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imageView?.image = UIImage(data: stuffedAnimal.image! as Data)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stuffedAnimal = stuffedAnimals[indexPath.row]
+        performSegue(withIdentifier: "animalSegue", sender: stuffedAnimal)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! StuffedAnimalViewController
+        nextVC.animal = sender as? StuffedAnimal
+    }
 
 }
 

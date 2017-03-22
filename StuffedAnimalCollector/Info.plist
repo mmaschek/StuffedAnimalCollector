@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Access to your camera so that you can take pictures and load them immediately to the app</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Access to your photos to see existing stuff animals so you don&apos;t have to take new ones</string>
 	<key>CFBundleDevelopmentRegion</key>
